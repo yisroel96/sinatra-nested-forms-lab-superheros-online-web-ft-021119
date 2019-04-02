@@ -5,10 +5,10 @@ class SuperHero
     @@all ||= []
   end
 
-  def initialize(opts={})
-    @name  = opts[:name]
-    @power = opts[:power]
-    @bio   = opts[:bio]
+  def initialize(h={})
+    @name  = h[:name]
+    @power = h[:power]
+    @bio   = h[:bio]
     self.save
   end
 
